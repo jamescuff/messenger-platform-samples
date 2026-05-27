@@ -25,7 +25,7 @@ export function Flashcards({ phrases, themeFilter, dueQueue, onReview, onRecordS
 
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
-  const { speak, supported, hasWelshVoice } = useTTS();
+  const { speak, supported, source } = useTTS();
 
   const card = initialQueue[index];
 
@@ -71,9 +71,9 @@ export function Flashcards({ phrases, themeFilter, dueQueue, onReview, onRecordS
               <SpeakButton onClick={() => speak(card.welsh)} />
             </div>
           )}
-          {!hasWelshVoice && supported && (
+          {source === "cloud" && (
             <p className="mt-2 text-[11px] text-slate-400">
-              No Welsh voice installed — using default voice.
+              Audio: cloud TTS (no Welsh voice on this device)
             </p>
           )}
         </div>
