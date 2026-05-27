@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0f172a"/>
+  <text x="50%" y="48%" font-family="ui-sans-serif, system-ui, sans-serif" font-weight="700"
+        font-size="200" fill="#f43f5e" text-anchor="middle" dominant-baseline="middle">Y</text>
+  <text x="50%" y="80%" font-family="ui-sans-serif, system-ui, sans-serif" font-weight="600"
+        font-size="68" fill="#f8fafc" text-anchor="middle" dominant-baseline="middle">S4C</text>
+</svg>
