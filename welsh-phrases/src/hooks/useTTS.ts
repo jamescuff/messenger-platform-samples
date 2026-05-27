@@ -37,6 +37,10 @@ export function useTTS() {
     const el = document.createElement("audio");
     el.preload = "none";
     el.style.display = "none";
+    // Google's translate_tts endpoint 403s when called with a third-party
+    // Referer (e.g. from github.io). Stripping the Referer lets it through.
+    el.setAttribute("referrerpolicy", "no-referrer");
+    (el as HTMLMediaElement & { referrerPolicy?: string }).referrerPolicy = "no-referrer";
     document.body.appendChild(el);
     audioRef.current = el;
     return () => {
