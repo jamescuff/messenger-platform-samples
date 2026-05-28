@@ -108,7 +108,7 @@ export function Quiz({ phrases, themeFilter, onRecordStat }: Props) {
         <div className="mt-2 flex items-center justify-between gap-3">
           <div className="text-xl font-semibold text-slate-900">{prompt}</div>
           {q.direction === "cy-to-en" && supported && (
-            <SpeakButton onClick={() => speak(q.prompt.welsh)} />
+            <SpeakButton onClick={() => speak(q.prompt.welsh, q.prompt.id)} />
           )}
         </div>
       </div>

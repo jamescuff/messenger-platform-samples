@@ -12,6 +12,11 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["favicon.svg", "icon.svg"],
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,webmanifest,mp3}"],
+        // Audio files are bigger than the default 2 MB precache cap.
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+      },
       manifest: {
         name: "Ymadroddion S4C",
         short_name: "Ymadroddion",

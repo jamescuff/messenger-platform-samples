@@ -62,7 +62,7 @@ export function Sentences({ phrases, themeFilter }: Props) {
         )}
 
         <div className="mt-3 flex flex-wrap gap-2">
-          {supported && <SpeakButton onClick={() => speak(card.example!.welsh)} />}
+          {supported && <SpeakButton onClick={() => speak(card.example!.welsh, `${card.id}-ex`)} />}
           <button
             type="button"
             onClick={() => setShowEn((s) => !s)}

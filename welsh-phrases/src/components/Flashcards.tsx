@@ -25,7 +25,7 @@ export function Flashcards({ phrases, themeFilter, dueQueue, onReview, onRecordS
 
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
-  const { speak, supported, source, error: ttsError } = useTTS();
+  const { speak, supported, error: ttsError } = useTTS();
 
   const card = initialQueue[index];
 
@@ -68,13 +68,8 @@ export function Flashcards({ phrases, themeFilter, dueQueue, onReview, onRecordS
           <div className="mt-2 text-2xl font-semibold text-slate-900">{card.welsh}</div>
           {supported && (
             <div className="mt-3 flex justify-center">
-              <SpeakButton onClick={() => speak(card.welsh)} />
+              <SpeakButton onClick={() => speak(card.welsh, card.id)} />
             </div>
-          )}
-          {source === "cloud" && !ttsError && (
-            <p className="mt-2 text-[11px] text-slate-400">
-              Audio: cloud TTS (no Welsh voice on this device)
-            </p>
           )}
           {ttsError && (
             <p className="mt-2 text-[11px] text-rose-500">Audio: {ttsError}</p>
@@ -103,7 +98,7 @@ export function Flashcards({ phrases, themeFilter, dueQueue, onReview, onRecordS
                 <div className="mt-1 text-slate-500">{card.example.english}</div>
                 {supported && (
                   <div className="mt-2">
-                    <SpeakButton onClick={() => speak(card.example!.welsh)}>
+                    <SpeakButton onClick={() => speak(card.example!.welsh, `${card.id}-ex`)}>
                       Listen to example
                     </SpeakButton>
                   </div>
