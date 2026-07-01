@@ -748,4 +748,372 @@ export const SEED_PHRASES: Phrase[] = [
       english: "When is the deadline for this campaign?",
     },
   },
+
+  // ─── Coffi gyda Manon (10 Gorffennaf) ──────────────────────────
+  // A working glossary for a specific conversation: brand, team
+  // structure, and the sensitive politics around the internal candidate.
+  // Example sentences are illustrative — worth a quick native check.
+
+  // Brand a chreadigol
+  {
+    id: "bm-11",
+    welsh: "gweledigaeth brand",
+    english: "brand vision",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Mae gweledigaeth brand gref yn hanfodol i'r sianel.",
+      english: "A strong brand vision is essential to the channel.",
+    },
+    notes: "Straight from the job description.",
+  },
+  {
+    id: "bm-12",
+    welsh: "adnabyddiaeth weledol",
+    english: "visual identity",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Mae ein hadnabyddiaeth weledol yn amlwg ar draws pob platfform.",
+      english: "Our visual identity is evident across every platform.",
+    },
+  },
+  {
+    id: "bm-13",
+    welsh: "cysondeb gweledol",
+    english: "visual consistency",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Mae cysondeb gweledol yn adeiladu ymddiriedaeth yn y brand.",
+      english: "Visual consistency builds trust in the brand.",
+    },
+    notes: "Ties to your Clic audit finding.",
+  },
+  {
+    id: "bm-14",
+    welsh: "system weledol",
+    english: "visual system",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Mae system weledol gyson yn ei gwneud hi'n haws dylunio.",
+      english: "A consistent visual system makes designing easier.",
+    },
+    notes: "Design-system level term, not just \"look\".",
+  },
+  {
+    id: "bm-15",
+    welsh: "stori brand",
+    english: "brand story",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Mae stori brand gref yn cysylltu â'r gynulleidfa.",
+      english: "A strong brand story connects with the audience.",
+    },
+  },
+  {
+    id: "bm-16",
+    welsh: "gweithredu'r brand",
+    english: "implementing / rolling out the brand",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Y cam nesaf yw gweithredu'r brand ar draws y sefydliad.",
+      english: "The next step is rolling out the brand across the organisation.",
+    },
+    notes: "The exact phrasing Manon may reuse from \"successfully rolling out the brand\".",
+  },
+  {
+    id: "bm-17",
+    welsh: "canfyddiad (o'r brand)",
+    english: "perception (of the brand)",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Rydyn ni am wella canfyddiad y cyhoedd o'r brand.",
+      english: "We want to improve public perception of the brand.",
+    },
+    notes: "Ties to strategy's \"improving perceptions of the S4C brand\".",
+  },
+  {
+    id: "bm-18",
+    welsh: "harmoneiddio",
+    english: "to harmonise",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Y nod yw harmoneiddio'r brand ar draws pob gwasanaeth.",
+      english: "The goal is to harmonise the brand across every service.",
+    },
+    notes: "The JD's word for the brand strategy goal — worth recognising if she uses it.",
+  },
+  {
+    id: "bm-19",
+    welsh: "trosolwg strategol",
+    english: "strategic overview",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Rhowch drosolwg strategol i mi cyn i ni fynd i'r manylion.",
+      english: "Give me a strategic overview before we get into the details.",
+    },
+  },
+  {
+    id: "bm-20",
+    welsh: "ymgyrchoedd integredig",
+    english: "integrated campaigns",
+    theme: "brand-marchnata",
+    example: {
+      welsh: "Mae ymgyrchoedd integredig yn cyrraedd cynulleidfaoedd ar draws sawl sianel.",
+      english: "Integrated campaigns reach audiences across multiple channels.",
+    },
+  },
+  {
+    id: "cn-15",
+    welsh: "asedau creadigol",
+    english: "creative assets",
+    theme: "cynhyrchu",
+    example: {
+      welsh: "Mae'r tîm yn datblygu asedau creadigol ar gyfer y lansiad.",
+      english: "The team is developing creative assets for the launch.",
+    },
+  },
+
+  // Tîm, strwythur a rheoli
+  {
+    id: "ar-15",
+    welsh: "strwythur (tîm)",
+    english: "(team) structure",
+    theme: "arweinyddiaeth",
+    example: {
+      welsh: "Sut mae strwythur y tîm yn gweithio ar hyn o bryd?",
+      english: "How does the team structure work at the moment?",
+    },
+  },
+  {
+    id: "ar-16",
+    welsh: "haenog / hierarchaidd",
+    english: "layered / hierarchical",
+    theme: "arweinyddiaeth",
+    example: {
+      welsh: "Mae'r strwythur presennol braidd yn haenog.",
+      english: "The current structure is rather layered.",
+    },
+    notes: "The word she used — good to recognise, not necessarily to use back.",
+  },
+  {
+    id: "ar-17",
+    welsh: "gwastad",
+    english: "flat (structure)",
+    theme: "arweinyddiaeth",
+    example: {
+      welsh: "Mae'n well gen i strwythur gwastad lle mae pawb yn cyfrannu.",
+      english: "I prefer a flat structure where everyone contributes.",
+    },
+    notes: "Useful contrast term if she's testing your instincts here.",
+  },
+  {
+    id: "ar-18",
+    welsh: "perchnogaeth",
+    english: "ownership",
+    theme: "arweinyddiaeth",
+    example: {
+      welsh: "Mae rhoi perchnogaeth i'r tîm yn codi safon y gwaith.",
+      english: "Giving the team ownership raises the standard of the work.",
+    },
+    notes: "The word that matters most if this topic surfaces — listen for who it's attached to.",
+  },
+  {
+    id: "ar-19",
+    welsh: "arwain tîm",
+    english: "to lead a team",
+    theme: "arweinyddiaeth",
+    example: {
+      welsh: "Dw i wedi arwain tîm creadigol ers pum mlynedd.",
+      english: "I've led a creative team for five years.",
+    },
+  },
+  {
+    id: "ar-20",
+    welsh: "dirprwyo",
+    english: "to delegate",
+    theme: "arweinyddiaeth",
+    example: {
+      welsh: "Mae'n bwysig dirprwyo er mwyn datblygu'r tîm.",
+      english: "It's important to delegate in order to develop the team.",
+    },
+  },
+  {
+    id: "ar-21",
+    welsh: "datblygu staff",
+    english: "staff development",
+    theme: "arweinyddiaeth",
+    example: {
+      welsh: "Dw i'n rhoi pwyslais mawr ar ddatblygu staff.",
+      english: "I place great emphasis on staff development.",
+    },
+    notes: "Softer, forward-looking register.",
+  },
+
+  // Cofrestr ddiplomataidd — os daw'r ymgeisydd mewnol i fyny
+  {
+    id: "sg-16",
+    welsh: "siomedig",
+    english: "disappointed",
+    theme: "sgyrsiau",
+    example: {
+      welsh: "Dw i'n deall ei bod hi'n siomedig am y penderfyniad.",
+      english: "I understand she's disappointed about the decision.",
+    },
+    notes: "Likely how she'll describe the internal candidate, if she does.",
+  },
+  {
+    id: "sg-17",
+    welsh: "sensitif",
+    english: "sensitive",
+    theme: "sgyrsiau",
+    example: {
+      welsh: "Mae hwn yn bwnc sensitif, felly gadewch i ni fod yn ofalus.",
+      english: "This is a sensitive subject, so let's be careful.",
+    },
+  },
+  {
+    id: "sg-18",
+    welsh: "bod yn ymwybodol o",
+    english: "to be mindful / aware of",
+    theme: "sgyrsiau",
+    example: {
+      welsh: "Dw i'n ymwybodol o ba mor anodd yw'r sefyllfa.",
+      english: "I'm mindful of how difficult the situation is.",
+    },
+    notes: "Good phrase for signalling you're alert to the dynamic without probing.",
+  },
+  {
+    id: "sg-19",
+    welsh: "cefnogi rhywun drwy gyfnod anodd",
+    english: "to support someone through a difficult period",
+    theme: "sgyrsiau",
+    example: {
+      welsh: "Mae'n bwysig cefnogi rhywun drwy gyfnod anodd.",
+      english: "It's important to support someone through a difficult period.",
+    },
+  },
+  {
+    id: "sg-20",
+    welsh: "parchu",
+    english: "to respect",
+    theme: "sgyrsiau",
+    example: {
+      welsh: "Rhaid parchu penderfyniad y panel.",
+      english: "We must respect the panel's decision.",
+    },
+  },
+  {
+    id: "sg-21",
+    welsh: "rhoi lle i rywun",
+    english: "to give someone space / room",
+    theme: "sgyrsiau",
+    example: {
+      welsh: "Weithiau mae angen rhoi lle i rywun addasu.",
+      english: "Sometimes you need to give someone space to adjust.",
+    },
+    notes: "Useful if she frames a plan for the internal candidate.",
+  },
+
+  // Ciwiau gwrando — a yw hi'n dal i benderfynu neu wedi penderfynu?
+  {
+    id: "sg-22",
+    welsh: "Dw i'n meddwl am...",
+    english: "I'm thinking about...",
+    theme: "sgyrsiau",
+    notes: "Listening cue: she's still forming a view — not yet decided.",
+  },
+  {
+    id: "sg-23",
+    welsh: "Ni wedi penderfynu...",
+    english: "We've decided...",
+    theme: "sgyrsiau",
+    notes: "Listening cue: the matter is settled.",
+  },
+  {
+    id: "sg-24",
+    welsh: "Mae'n bosib y bydd...",
+    english: "It's possible that...",
+    theme: "sgyrsiau",
+    notes: "Listening cue: she's genuinely open.",
+  },
+  {
+    id: "sg-25",
+    welsh: "Y cynllun ar hyn o bryd yw...",
+    english: "The current plan is...",
+    theme: "sgyrsiau",
+    notes: "Listening cue: she has a plan, but it may still be movable.",
+  },
+  {
+    id: "sg-26",
+    welsh: "Beth yw dy farn di?",
+    english: "What's your view?",
+    theme: "sgyrsiau",
+    notes: "Listening cue: she's actually asking, not informing — a real invitation.",
+  },
+
+  // Ymatebion niwtral, derbyngar — aros yn agored heb fynd yn fflat
+  {
+    id: "sg-27",
+    welsh: "Diddorol — dwed fwy.",
+    english: "Interesting — tell me more.",
+    theme: "sgyrsiau",
+    notes: "Neutral, receptive response — keeps her talking without steering.",
+  },
+  {
+    id: "sg-28",
+    welsh: "Dw i'n gweld.",
+    english: "I see.",
+    theme: "sgyrsiau",
+  },
+  {
+    id: "sg-29",
+    welsh: "Sut wyt ti'n meddwl bydd hynny'n gweithio?",
+    english: "How do you think that would work?",
+    theme: "sgyrsiau",
+  },
+  {
+    id: "sg-30",
+    welsh: "Cynnar dyddiau i fi, ond dw i'n gwrando'n astud.",
+    english: "Early days for me, but I'm listening closely.",
+    theme: "sgyrsiau",
+  },
+  {
+    id: "sg-31",
+    welsh: "Dyna'n union y math o beth dw i isie mynd i'r afael ag e'n iawn.",
+    english: "That's exactly the kind of thing I want to get properly stuck into.",
+    theme: "sgyrsiau",
+  },
+
+  // Cofrestr coffi — agorwyr/cau anffurfiol, i gyd-fynd â'i thôn hi
+  {
+    id: "sg-32",
+    welsh: "Braf dy weld di.",
+    english: "Good to see you.",
+    theme: "sgyrsiau",
+    notes: "Informal coffee-register opener.",
+  },
+  {
+    id: "sg-33",
+    welsh: "Sut mae pethe wedi bod ers y cyfweliad?",
+    english: "How have things been since the interview?",
+    theme: "sgyrsiau",
+  },
+  {
+    id: "sg-34",
+    welsh: "Methu aros i ddechre, wir.",
+    english: "Genuinely can't wait to start.",
+    theme: "sgyrsiau",
+  },
+  {
+    id: "sg-35",
+    welsh: "Diolch am wneud amser — mi o'n i isie clywed dy feddylie di cyn dechre.",
+    english: "Thanks for making time — I wanted to hear your thinking before I start.",
+    theme: "sgyrsiau",
+  },
+  {
+    id: "sg-36",
+    welsh: "Un o'r pethe wnaeth fy nenu fwya at y rôl oedd y gwaith brand — teimlo bod 'na sgôp go iawn i wneud rhywbeth ystyrlon.",
+    english: "One of the things that attracted me most to the role was the brand work — feeling there was real scope to do something meaningful.",
+    theme: "sgyrsiau",
+    notes: "Ready-made answer if the \"what attracted you to the role\" line comes up naturally.",
+  },
 ];
