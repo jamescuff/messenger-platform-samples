@@ -1,0 +1,25 @@
+import { useCallback, useEffect, useState } from "react";
+
+export function useStorage<T>(key: string, initial: T) {
+  const [value, setValue] = useState<T>(() => {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw === null) return initial;
+      return JSON.parse(raw) as T;
+    } catch {
+      return initial;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch {
+      // storage full or unavailable — ignore
+    }
+  }, [key, value]);
+
+  const reset = useCallback(() => setValue(initial), [initial]);
+
+  return [value, setValue, reset] as const;
+}
